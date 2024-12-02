@@ -38,7 +38,7 @@ describe('template spec', () => {
     cy.get(':nth-child(2) > .view > [data-testid="todo-item-button"]').click()
     cy.get('[data-testid="todo-item-label"]').should("be.visible")
   })
-
+  
   it('Filtrar tareas', () => {
     cy.visit ("https://todomvc.com/examples/react/dist/")
     cy.get('[data-testid="text-input"]').type("comprar el pan{enter}")
